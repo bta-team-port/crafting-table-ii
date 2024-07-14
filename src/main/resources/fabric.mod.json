@@ -6,11 +6,14 @@
   "name": "Example Mod",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
-    "Turnip Labs"
+    "Team Port",
+		"Zeldo (original porter)"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/bta-team-port",
+		"original": "https://code.google.com/archive/p/craftingtableiii/source/default/source",
+    "sources": "https://github.com/bta-team-port/crafting-table-ii",
+		"issues": "https://github.com/bta-team-port/crafting-table-ii/issues"
   },
 
 	"icon": "icon.png",
@@ -19,24 +22,24 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.crafting2.CraftingTableII"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.crafting2.CraftingTableII"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.crafting2.CraftingTableII"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.crafting2.core.recipes.C2Recipes"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"crafting2.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "~7.1",
+		"minecraft": "^7.2-beta",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
